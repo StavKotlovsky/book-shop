@@ -1,0 +1,131 @@
+* {
+  box-sizing: border-box;
+}
+
+body.rtl {
+  direction: rtl;
+}
+
+body {
+  background-image: url(../img/book.jpg);
+  overflow-x: hidden;
+  text-align: center;
+  color: rgb(255, 225, 225);
+}
+h1 {
+  font-size: 50px;
+  padding: 30px;
+}
+button:hover {
+  background-color: rgba(247, 212, 166, 0.829);
+  transition: 0.5s;
+}
+button {
+  height: 30px;
+  width: 80px;
+  color: rgb(255, 225, 225);
+  border-radius: 20px;
+  margin: 7px;
+  cursor: pointer;
+  background-color: rgb(139 92 51);
+  border: 1px solid rgba(220, 95, 60, 0.219);
+}
+.add-book {
+  background-color: rgba(255, 183, 218, 0.582);
+  color: black;
+  border-radius: 20%;
+  font-size: 0.8em;
+}
+.add-btn {
+  background-color: #8f5d322c;
+}
+
+.book-modal {
+  background-color: rgb(18, 31, 31);
+  color: rgb(250, 185, 196);
+  padding: 10px;
+  position: absolute;
+  font-size: 1em;
+  font-family: Geneva, Verdana, sans-serif;
+  top: 20px;
+  left: 150%;
+  height: 90vh;
+  max-width: 500px;
+  text-align: center;
+  max-height: 80vh;
+  border-radius: 20px;
+}
+.book-modal.open-modal {
+  left: 50%;
+  transition: left 0.5s;
+}
+.book-modal h3 {
+  color: pink;
+  text-decoration: overline;
+  text-transform: capitalize;
+}
+.book-modal h4 span {
+  color: pink;
+}
+.book-modal > p {
+  text-align: center;
+  font-size: 0.7em;
+}
+
+.user-msg {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background-color: rgb(138, 52, 44);
+  padding: 10px;
+  transform: translateX(150%);
+  transition: transform 1s;
+}
+.msg-open {
+  transform: translate(0);
+  transition: transform 1s;
+}
+
+td {
+  background-color: rgba(100, 54, 32, 0.772);
+  color: rgb(253, 220, 220);
+  border: 1px solid rgba(253, 246, 246, 0.566);
+}
+
+.book-cover {
+  height: 70px;
+  width: 50px;
+}
+
+.table-container {
+  display: flex;
+  justify-content: center;
+  min-height: 250px;
+  align-items: center;
+}
+
+.min-btn {
+  border-radius: unset;
+  width: 35px;
+  height: 35px;
+}
+.plus-btn {
+  border-radius: unset;
+  width: 35px;
+  height: 35px;
+}
+
+.filter-books {
+  justify-content: center;
+  padding: 30px;
+}
+.filter-by-name {
+  height: 25px;
+  color: rgb(230, 176, 210);
+  background-color: rgba(147, 139, 136, 0.358);
+}
+
+.sorting {
+  position: relative;
+  font-size: 0.8em;
+}
